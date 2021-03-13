@@ -5,10 +5,10 @@ import React, { useState } from 'react';
 import './header.scss';
 
 //assets
-import logo from '../../assets/hn-logo.png';
-import searchNew from '../../assets/search-new.png';
-import { ReactComponent as MoonIcon } from '../../assets/moon-icon.svg';
-import { ReactComponent as SunIcon } from '../../assets/sun-icon.svg';
+import logo from '../../assets/img/hn-logo.png';
+import searchNew from '../../assets/img/search-new.png';
+import { ReactComponent as MoonIcon } from '../../assets/img/moon-icon.svg';
+import { ReactComponent as SunIcon } from '../../assets/img/sun-icon.svg';
 
 export const Header = () => {
   const [activeIcon, setActiveIcon] = useState('sun');

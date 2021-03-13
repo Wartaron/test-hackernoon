@@ -1,7 +1,9 @@
+@import '../../assets/styles/vars';
+
 .header {
   align-items: center;
-  background: #0f0;
-  color: white;
+  background: $main-background;
+  color: $white;
   display: flex;
   transition: background-color 0.2s ease 0s;
 
@@ -11,13 +13,13 @@
     font-size: 16px;
 
     input {
-      background-color: #003b00;
+      background-color: $dark-background;
       border-radius: 2px;
       border: none;
-      color: #0f0;
+      color: $green;
       font-size: 16px;
       font-weight: bold;
-      outline-color: #0f0;
+      outline-color: $green;
       padding: 10px 20px 10px 10px;
       transition: all 120ms ease-in-out 0s;
       width: 250px;
@@ -47,37 +49,37 @@
     align-items: stretch;
 
     & > .button {
-      border: 2px solid #212428;
-      color: #212428;
+      border: 2px solid $black;
+      color: $black;
       cursor: pointer;
-      font-family: 'IBM Plex Mono', monospace;
+      font-family: $theme-font;
       font-weight: 600;
       margin-left: 10px;
       padding: 0.6rem 1.2rem;
 
       &:hover {
-        background-color: #62ff86;
+        background-color: $light-background;
       }
 
       &--transparent {
-        border: 2px solid #0f0;
-        color: #212428;
+        border: 2px solid $green;
+        color: $black;
         cursor: pointer;
-        font-family: 'IBM Plex Mono', monospace;
+        font-family: $theme-font;
         font-weight: 600;
         margin-left: 10px;
         padding: 0.6rem 1.2rem;
 
         &:hover {
-          border-color: #212428;
-          background-color: #62ff86;
+          border-color: $black;
+          background-color: $light-background;
         }
       }
     }
   }
 
   &__toggle-night-mode {
-    color: #003b00;
+    color: $dark-green;
     width: 60px;
     height: 60px;
     background-color: transparent;

@@ -1,0 +1,13 @@
+@import '../../assets/styles/vars';
+
+.not-found-404 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  h5 {
+    font-size: 40px;
+    font-family: $theme-font;
+  }
+}

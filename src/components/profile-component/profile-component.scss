@@ -1,0 +1,66 @@
+@import '../../assets/styles/vars';
+
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-content: start;
+  margin-bottom: 20px;
+  grid-row: span 5 / auto;
+  place-items: start;
+  padding-right: 10px;
+  grid-column: 1 / span 1;
+
+  & > a {
+    display: flex;
+    align-items: flex-start;
+    background-color: $white;
+
+    & > img {
+      max-width: 75px;
+      object-fit: cover;
+      box-shadow: rgb(194 202 214) 0px 0.2em, rgb(194 202 214) 0px -0.2em,
+        rgb(194 202 214) 0.2em 0px, rgb(194 202 214) -0.2em 0px;
+    }
+  }
+
+  & h3 {
+    margin: 0px 0px 20px;
+    font-size: 18px;
+
+    & a {
+      padding: 2px 0px 1px;
+      background-image: linear-gradient(
+        transparent 0%,
+        transparent calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) 100%
+      );
+      background-size: 100% 200%;
+      background-position: 0px 0px;
+      word-break: break-word;
+    }
+
+    & small {
+      display: block;
+      margin-top: 5px;
+    }
+  }
+
+  & p {
+    font-size: 16px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+
+    & > * {
+      align-items: flex-end;
+      background: none;
+      display: flex;
+      margin-left: 0px;
+      margin-right: 10px;
+    }
+  }
+}

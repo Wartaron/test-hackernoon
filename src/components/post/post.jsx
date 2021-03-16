@@ -60,23 +60,23 @@ export const Post = () => {
                 </span>
                 <BookmarkIcon />
               </div>
-              <div class="reactions">
+              <div className="reactions">
                 <div>
                   <label>{reactions?.total}</label>
-                  <div class="emojis">
-                    <div class="emojis__container">
+                  <div className="emojis">
+                    <div className="emojis__container">
                       <span>{reactions?.storyReactions?.heart}</span>
                       <img src="https://hackernoon.com/emojis/heart.png" />
                     </div>
-                    <div class="emojis__container">
+                    <div className="emojis__container">
                       <span>{reactions?.storyReactions?.light}</span>
                       <img src="https://hackernoon.com/emojis/light.png" />
                     </div>
-                    <div class="emojis__container">
+                    <div className="emojis__container">
                       <span>{reactions?.storyReactions?.boat}</span>
                       <img src="https://hackernoon.com/emojis/boat.png" />
                     </div>
-                    <div class="emojis__container">
+                    <div className="emojis__container">
                       <span>{reactions?.storyReactions?.money}</span>
                       <img src="https://hackernoon.com/emojis/money.png" />
                     </div>
@@ -102,7 +102,7 @@ export const Post = () => {
                   <small>{profile?.displayName}</small>
                 </h3>
                 <p dangerouslySetInnerHTML={{ __html: profile.bio }}></p>
-                <div class="social-links">
+                <div className="social-links">
                   <a
                     href={`https://twitter.com/${profile?.twitter}`}
                     target="_blank"

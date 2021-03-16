@@ -1,0 +1,68 @@
+@import '../../assets/styles/vars';
+
+.injected-html {
+  display: grid;
+  gap: 2.5rem 25px;
+  grid-gap: 2.5rem 25px;
+  grid-template-columns: 1fr;
+  max-width: 1200px;
+  width: 100%;
+
+  .paragraph {
+    min-width: 0;
+    margin: 0;
+    overflow-wrap: break-word;
+    font-size: 20px;
+    font-family: $ibm-plex;
+
+    & > a {
+      padding: 2px 0px 1px;
+      background-image: linear-gradient(
+        transparent 0%,
+        transparent calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) calc(50% - 9px),
+        rgba(0, 255, 0, 0.35) 100%
+      );
+      background-size: 100% 200%;
+      background-position: 0px 0px;
+      word-break: break-word;
+    }
+
+    & pre {
+      display: inline;
+      font-family: monospace;
+      background-color: $white2;
+      padding: 3px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+  }
+
+  .youtube-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .code-container {
+    min-width: 0px;
+    grid-column: 1 / -1;
+    padding: 10px;
+    margin: 0 -100px;
+  }
+
+  & > blockquote {
+    font-style: italic;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 25px 0px;
+    grid-column: 1;
+    text-align: center;
+    font-size: 25px;
+  }
+}

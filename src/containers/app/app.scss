@@ -12,10 +12,16 @@ body {
 }
 
 h1,
+h2,
 h3 {
   letter-spacing: 0px;
   font-family: 'IBM Plex Mono', monospace;
   line-height: 1.4;
+}
+
+b,
+strong {
+  font-weight: bolder;
 }
 
 small {
@@ -27,6 +33,12 @@ a {
   transition: color 200ms ease 0s;
   outline: none;
   background-color: transparent;
+  color: $black;
+}
+
+code {
+  font-family: monospace, monospace;
+  font-size: 16px;
 }
 
 button {

@@ -5,7 +5,7 @@ import { Route, Redirect, withRouter, Switch } from 'react-router-dom';
 //components
 import Header from '../../components/header/header';
 import SubHeader from '../../components/sub-header/sub-header';
-import NotFound404 from '../../components/404/not-found-404';
+import NotFound404 from '../../components/not-found-404/not-found-404';
 import Post from '../../components/post/post';
 import Initial from '../../components/initial/initial';
 

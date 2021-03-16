@@ -7,6 +7,7 @@ import { FirebaseContext } from '../../providers/firebase-context';
 
 //components
 import { InjectedHTML } from '../injected-html/injected-html';
+import { EmojisComponent } from '../emojis-component/emojis-component';
 
 //assets
 import { ReactComponent as StarIcon } from '../../assets/img/star.svg';
@@ -60,29 +61,7 @@ export const Post = () => {
                 </span>
                 <BookmarkIcon />
               </div>
-              <div className="reactions">
-                <div>
-                  <label>{reactions?.total}</label>
-                  <div className="emojis">
-                    <div className="emojis__container">
-                      <span>{reactions?.storyReactions?.heart}</span>
-                      <img src="https://hackernoon.com/emojis/heart.png" />
-                    </div>
-                    <div className="emojis__container">
-                      <span>{reactions?.storyReactions?.light}</span>
-                      <img src="https://hackernoon.com/emojis/light.png" />
-                    </div>
-                    <div className="emojis__container">
-                      <span>{reactions?.storyReactions?.boat}</span>
-                      <img src="https://hackernoon.com/emojis/boat.png" />
-                    </div>
-                    <div className="emojis__container">
-                      <span>{reactions?.storyReactions?.money}</span>
-                      <img src="https://hackernoon.com/emojis/money.png" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <EmojisComponent reactions={reactions} />
             </div>
             <div className="post__image">
               <img src={mainImage} />
@@ -129,6 +108,9 @@ export const Post = () => {
               </div>
             </div>
             <InjectedHTML markup={markup} />
+            <div className="post__bottom-reactions">
+              <EmojisComponent reactions={reactions} />
+            </div>
           </div>
         </>
       ) : null}

@@ -1,0 +1,52 @@
+@import '../../assets/styles/vars';
+
+.reactions {
+  align-items: center;
+  display: flex;
+  grid-column: 3 / auto;
+  justify-content: flex-end;
+
+  & > div:first-child {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-column: 3 / auto;
+
+    & > label {
+      font-family: $theme-font;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    .emojis {
+      color: $grey;
+      display: flex;
+      flex-grow: 1;
+      text-align: center;
+
+      &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7px;
+        position: relative;
+
+        & > span {
+          display: none;
+        }
+
+        & > img {
+          cursor: pointer;
+          filter: grayscale(1);
+          height: 30px;
+          opacity: 0.5;
+          transform: scale(1);
+          transition: all 120ms ease-in-out 0s;
+        }
+      }
+    }
+  }
+}
